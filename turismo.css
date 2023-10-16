@@ -1,0 +1,198 @@
+body {
+    background-color: #FFF;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+header {
+    background-color: #FFF;
+    padding: 15px;
+    box-shadow: 0 0 3px #000;
+}
+
+header li {
+    display: inline;
+    padding-left: 45px;
+}
+
+header li a {
+    color: #000;
+    text-decoration: none;
+    padding: 13px;
+    transition: .05s ease;
+}
+
+header ul #Contato a {
+    color: #000000;
+    background-color: red;
+    border-radius: 30px;
+    float: right;
+    position: relative;
+    top: -15px;
+    transition: .3s ease;
+}
+
+header ul #Contato a:hover {
+        color: #fff;
+        background-color: #000;
+
+}
+
+header li a:hover {
+    color: red;
+
+}
+
+header li img {
+    width: 75px;
+    float: left;
+    margin-top: -20px;
+}
+
+.active {
+    color: red;
+}
+
+.slider {
+    margin: 0 auto;
+    width: 1800px;
+    height: 800px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 800px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img {
+    width: 1800px;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 1800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #FFF;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .05s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: #FFF;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+#radio5:checked ~ .first{
+    margin-left: -100%;
+}
+
+.navition-auto {
+    border: 2px solid #FFF;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .05s;
+}
+
+.navition-auto {
+    position: absolute;
+    width: 1800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navition-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navition-auto .auto-btn1 {
+    background-color: #FFF;
+
+}
+
+#radio2:checked ~ .navition-auto .auto-btn1 {
+    background-color: #FFF;
+    
+}
+
+#radio3:checked ~ .navition-auto .auto-btn1 {
+    background-color: #FFF;
+    
+}
+
+#radio4:checked ~ .navition-auto .auto-btn1 {
+    background-color: #FFF;
+    
+}
+
+#radio5:checked ~ .navition-auto .auto-btn1 {
+    background-color: #FFF;
+    
+}
+
+.page1 {
+    background-color: #f1e653;
+}
+
+.page1 {
+    background-color: #a5fade;
+}
+
+.page1 {
+    background-color: #a7cdff;
+}
+
+.page1 {
+    background-color: #d5b4ff;
+}
+
+.page1 {
+    background-color: #ffaff2;
+}
+
+.interface {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
